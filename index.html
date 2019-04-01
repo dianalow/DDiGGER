@@ -1,0 +1,68 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DDiGGER - Data-Driven Grouping for Gene Expression in R</title>
+	<link rel="stylesheet" href="ddg.css" />
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+		<h1>DDiGGER</h1><p>Data-Driven Grouping for Gene Expression in R</p>
+		
+		</div>
+		
+		<div id="content">
+		<img src="images/ddigger_shot.jpg">
+		<p>
+		<h4>DDiGGER is a data-driven grouping method for significant gene and gene pair selection.</h4>
+		<h2>Features</h2>
+		<p><ul>
+		<li>Uses information from microarray intensities and patient survival information</li>
+		<li>Identifies survival significant genes (1D) and gene pairs (2D)</li>
+		<li>Produces list of genes via Cox proportional hazards model and corresponding statistics</li>
+		<li>Generates survival plots for chosen genes</li>
+		</ul>
+		</p>
+		<h2>Requirements</h2>
+		<p>This software package requires : 
+		<ul>
+		<li><a href="http://cran.r-project.org/bin/windows/base/" target="_blank">R</a> version 2.14.0 and above
+		<li>R packages : <a href="http://cran.r-project.org/web/packages/survival/index.html">survival</a>, <a href="http://cran.r-project.org/web/packages/tkrplot/index.html">tkrplot</a>. To install, type <pre>install.packages("package-name")</pre> at R command prompt.
+		<li>tcltk (pre-installed in most Linux distros; comes with Windows installation of R; visit CRAN for <a href="http://cran.r-project.org/bin/macosx/tools">Mac</a> instructions)
+		<li><a href="http://sourceforge.net/projects/tktable/files/tktable/">Tktable</a> (tcltk extension) for Linux. The Tktable package is a standard Linux/Unix source package so it can be unzipped with <font face="Courier New">tar zxvf</font> and installed with <font face="Courier New">configure; make; make install</font> assuming that you have the appropriate tcl-devel and tk-devel packages installed.
+		<li><a href="http://pages.cs.wisc.edu/~ghost/">GSView</a> to view postscript plots
+		</ul>
+		<h2>Downloads</h2>
+		<p>ddigger v0.9b : contains Rdata file and PDF manual</p>
+		<p>Sample files :
+		<ul>
+		<li><a href="files/affy_normalized_intensities.txt">affymetrix intensity profile</a> [63MB]
+		<li><a href="files/genes.txt">gene annotations</a> [0.8MB]
+		<li><a href="files/clinical_data.txt">clinical data</a> [3KB]
+		<li><a href="files/genes_sublist.txt">subset of genes</a> [1KB]
+		<li><p><a href="files/sample_output.zip">output package</a> [0.2MB]
+		</ul>
+		</p>
+		
+		
+
+		
+		
+		<h2>References</h2>
+		<ul>
+		<li>
+		Cox, D.R. 1972. Regression models and life-tables. Journal of the Royal Statistical Society B 34, 187-220.</li>
+		<li>Motakis, E., Ivshina, A.V. and Kuznetsov, V.A. 2009. Data-driven approach to predict survival of cancer patients. IEEE Engineering in Medicine and Biology 28, 58-66.</li>
+		<li>Motakis, E., Low, D.H.P. and Kuznetsov, V.A. 2012. Gene selection of breast cancer survival biomarkers via data-driven patients grouping and network analysis (ms in prep).</li>
+		</ul>
+		
+		<h2>Contact Information</h2>
+		<p>DDiGGER was written by <a href="http://web.bii.a-star.edu.sg/~dianal/" target="_blank">Diana Low</a> &amp;  <a href="http://web.bii.a-star.edu.sg/~efthimiosm/" target="_blank">Efthimios Motakis</a> .</p>
+		<img src="images/line.png">
+		<center>Copyright &copy; 2011 <i>(Last updated : 22 December 2011)</i></center>
+		<br><br><br>
+		
+		</div>
+	</div>
+</body>
+</html>

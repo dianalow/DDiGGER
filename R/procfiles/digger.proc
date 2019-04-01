@@ -1,0 +1,15 @@
+{
+  if($1 ~ /InstallPath/) {
+    nn = NF;
+    for(i = 1; i <= nn; i++)
+      arr[i] = $i
+  }
+}
+
+END {
+  ipath = "\""arr[3]
+  for(i = 4; i <= nn; i++)
+    ipath = (ipath " " arr[i])
+  ipath = (ipath "\\bin\\i386\\Rterm\"")
+  print ipath
+}
